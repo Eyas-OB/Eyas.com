@@ -24,6 +24,16 @@
   color: white;
 }
 
+/* -------------------------------------------------------------------------- */
+/* Layout for the example cards */
+/* -------------------------------------------------------------------------- */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* Space between cards */
+  margin-top: 24px;
+}
+
 .App-link {
   color: #61dafb;
 }
