@@ -5,35 +5,24 @@ import './App.css';                      // Import the default styles
 
 function App() {
   return (
-    // Outer container
+    // contains the app
     <div className="App">
-      
-      {/* New header added here */}
-      <h1>Hello, this is my first React app!</h1>
 
       {/* Header section */}
       <header className="App-header">
+      
+       {/* headder for this app 
+       h1 is the big headder */}
+        <h1>Eyas.com!</h1>
         
         {/* React logo image */}
         <img src={logo} className="App-logo" alt="logo" />
 
-        {/* Sample paragraph */}
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-
-        {/* Link to React docs */}
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-
         {/* Your custom Card component displayed below */}
-        <Card />
+        {/* Your custom reusable Card components */}
+        <Card title="Welcome!" content="This is your first custom card." />
+        <Card title="About Us" content="We use data to solve cool problems." />
+        <Card title="Contact" content="Reach out to Eyas at eyas.com/contact." />
       </header>
     </div>
   );
